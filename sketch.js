@@ -5,10 +5,10 @@ var yPosition = 0;
 
 function setup() {
 	createCanvas(600, 400);
-	for(var i = 0; i <= 0; i++){
+	for(var i = 0; i <= 2; i++){
 		blocks[i] = [];
 		yPosition += 30;
-		for(var j = 0; j <= 0; j++){
+		for(var j = 0; j <= 4; j++){
 			blocks[i][j] = new block(j*80+100, yPosition);
 		}
 	}
@@ -20,8 +20,8 @@ function draw() {
 		shoots[i].show();
 		shoots[i].move();
 	}
-	for(var i = 0; i <= 0; i++){
-		for(var j = 0; j <= 0; j++){
+	for(var i = 0; i <= 2; i++){
+		for(var j = 0; j <= 4; j++){
 			blocks[i][j].show();
 		}
 	}
